@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Noto+Serif+KR&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Nanum+Gothic&family=Noto+Serif+KR&display=swap"
       rel="stylesheet"
     />
     <script
@@ -40,47 +40,113 @@
     <!-- SKILLS -->
     <section id="skills">
       <div class="icon-container">
-        <div class="icon" >
+        <div class="icon">
           <img src="./SVGs/html5.svg" alt="HTML 5 icon" />
           <p class="icon-name">HTML 5</p>
         </div>
-        <div class="icon" >
+        <div class="icon">
           <img src="./SVGs/css3.svg" alt="CSS 3 icon" />
           <p class="icon-name">CSS 3</p>
         </div>
-        <div class="icon" >
+        <div class="icon">
           <img src="./SVGs/javascript.svg" alt="Javascript icon" />
           <p class="icon-name">JavaScript</p>
         </div>
-        <div class="icon" >
+        <div class="icon">
           <img src="./SVGs/python.svg" alt="Python icon" />
           <p class="icon-name">Python</p>
         </div>
-        <div class="icon" >
+        <div class="icon">
           <img src="./SVGs/react.svg" alt="React icon" />
           <p class="icon-name">React</p>
         </div>
-        <div class="icon" >
+        <div class="icon">
           <img src="./SVGs/redux.svg" alt="redux icon" />
           <p class="icon-name">Redux</p>
         </div>
-        <div class="icon" >
+        <div class="icon">
           <img src="./SVGs/nodejs.svg" alt="Node icon" />
           <p class="icon-name">Node</p>
         </div>
-        <div class="icon" >
+        <div class="icon">
           <img src="./SVGs/database.svg" alt="database icon" />
           <p class="icon-name">SQL</p>
         </div>
-        <div class="icon" >
+        <div class="icon">
           <img src="./SVGs/api.svg" alt="database icon" />
           <p class="icon-name">RESTful API's</p>
         </div>
-        
       </div>
     </section>
     <!-- PROJECTS -->
-    <section id="projects"></section>
+    <section id="projects">
+      <h1 class="project-header">Projects</h1>
+      <div class="project-container">
+        <div class="project">
+          <img src="./images/WLJSS.png" />
+          <h4 class="project-title">Weight Lifting Journal</h4>
+          <p class="stack">
+            <span class="tech-stack">Stack:</span> Node.js, Express.js,Knex.js,
+            SQLite3, JSON WebToken, Jest, Supertest
+          </p>
+          <p class="project-description">
+            Weight Lifting Journal is a web-based application that allows users
+            to keep track of their weight lifting journey
+          </p>
+          <ul class="project-bullets">
+            <li>
+              Delivered a RESTful Web-based API using Node.js, Express, and
+              SQLite3, that allows users to register, login and perform CRUD
+              operations
+            </li>
+            <li>
+              Used JSON WebToken for authentication and security. Added
+              restricted middleware to routes, to prevent unauthorized access to
+              endpoints
+            </li>
+            <li>Built unit tests using Jest and Supertest</li>
+          </ul>
+        </div>
+        <div class="project">
+          <img src="./images/PPSS.png" />
+          <h4 class="project-title">Plant Parenthood</h4>
+          <p class="stack">
+            <span class="tech-stack">Stack:</span> React.js, Redux, Redux-Thunk, Styled-Components, React-Router-Dom
+          </p>
+          <p class="project-description">
+            Plant Parenthood is a front-end React application to help users keep track of when to water their plants
+          </p>
+          <ul class="project-bullets">
+            <li>
+              Built out routes and private routes using react-router-dom
+            </li>
+            <li>
+              Implemented Redux for state management
+            </li>
+            <li>Used AXIOS to allow user to perform full CRUD operations, utilizing a 3rd party API</li>
+          </ul>
+        </div>
+        <div class="project">
+          <img src="./images/VMSS.png" />
+          <h4 class="project-title">Vegan Meets</h4>
+          <p class="stack">
+            <span class="tech-stack">Stack:</span> React.js, Redux, Redux-Thunk, Styled-Components, React-Router-Dom
+          </p>
+          <p class="project-description">
+            Vegan Meets is a front-end React application to help users find vegetarian and vegan friendly restaurants
+          </p>
+          <ul class="project-bullets">
+            <li>
+              Built login and register components using Formik and yup for form validation
+            </li>
+            <li>
+              Used AXIOS to allow user to perform full CRUD operations, utilizing a 3rd party API
+            </li>
+            <li>Implemented search functionality</li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <!-- CONTACT -->
     <section id="contact"></section>
   </body>
