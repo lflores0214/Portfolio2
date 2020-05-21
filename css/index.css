@@ -105,6 +105,9 @@ nav,
 section {
   display: block;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   line-height: 1;
   background-color: white;
@@ -134,12 +137,11 @@ table {
 
 #nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   background-color: white;
   width: 100%;
   height: 5vh;
-  margin-top: 1%;
 }
 
 #nav a {
@@ -160,6 +162,7 @@ table {
 #home {
   margin-top: 30vh;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   background-color: white;
   max-width: 100%;
@@ -170,7 +173,7 @@ table {
 .hero {
   border-radius: 50%;
   max-width: 100%;
-  height: 40vh;
+  height: 350px;
 }
 .about-container {
   width: 50%;
@@ -181,7 +184,6 @@ table {
   color: #595b5e;
   padding-top: 5%;
   margin-bottom: 1.5%;
-  text-transform: capitalize;
 }
 #home .title {
   font-size: 2.5rem;
@@ -196,7 +198,7 @@ table {
   text-align: center;
   color: #6a6a6a;
   line-height: 1.5rem;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
 }
 .icon-container {
   width: 80%;
@@ -206,7 +208,7 @@ table {
   justify-content: center;
   text-align: center;
   margin-bottom: 5%;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
 }
 .icon-container img {
   width: 150px;
@@ -217,71 +219,173 @@ table {
 }
 .icon-name {
   text-align: center;
-  
+
   font-size: 1.4rem;
 }
-#projects{
-    display: flex;
-    width: 80%;
-    flex-wrap: wrap;
-    margin-bottom: 5%;
+#projects {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
 }
-.project-container{
-    display: flex;
-    flex-wrap: wrap;
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
 }
-.project-header{
-    font-size: 3em;
-    margin-bottom:10%;
-    text-decoration: underline;
-    font-family: "Noto Serif KR", serif;
+.project-header {
+  font-size: 3em;
+  margin-bottom: 10%;
+  text-decoration: underline;
+  font-family: "Noto Serif KR", serif;
 }
-.project{
-    width: 80%;
-    margin-left: 10%;
-    background-color:#595b5e;
-    text-align: center;
-    margin-bottom: 5%;
-    border-radius: 2%;
+.project {
+  width: 80%;
+  margin-left: 10%;
+  background-color: #595b5e;
+  text-align: center;
+  margin-bottom: 5%;
+  border-radius: 2%;
+  padding-bottom: 2%;
 }
-.project img{
-    max-width: 100%;
-    width: 90%;
-    margin: 2% 2% 2% 2%;
-    border-radius: 2%;
+.project img {
+  max-width: 100%;
+  width: 90%;
+  margin: 2% 0 2% 0;
+  border-radius: 2%;
 }
 
-.project-title{
-    color: whitesmoke;
-    font-size: 1.8rem;
-    text-decoration: underline;
-    margin-bottom: 5%;
+.project-title {
+  color: whitesmoke;
+  font-size: 1.8rem;
+  text-decoration: underline;
+  margin: 0 0 2% 5%;
+
+  text-align: start;
+  font-family: "Noto Serif KR", serif;
 }
-.stack{
-    font-size: 1.4rem;
-    color: whitesmoke;
-    line-height: 1.5rem;
-    margin-bottom: 3%;
-    text-align: justify;
+.stack {
+  font-size: 1.4rem;
+  color: whitesmoke;
+  line-height: 1.5rem;
+  margin-bottom: 3%;
+  margin: 0 0 3% 5%;
+  text-align: start;
+  font-family: "Nanum Gothic", sans-serif;
 }
 .tech-stack {
-    text-decoration: underline;
-    margin-left: 2%;
+  /* text-decoration: underline; */
+  font-family: "Noto Serif KR", serif;
 }
-.project-description{
-    font-size: 1.2rem;
-    color: whitesmoke;
-    margin: 0 2% 2% 2%;
-    line-height: 1.5rem;
+.project-description {
+  font-size: 1.2rem;
+  color: whitesmoke;
+  margin: 0 2% 2% 5%;
+  line-height: 1.5rem;
+  font-family: "Nanum Gothic", sans-serif;
 }
 .project-bullets {
-    font-size: 1.2rem;
-    color: whitesmoke
+  font-size: 1.2rem;
+  color: whitesmoke;
 }
 .project-bullets li {
-    text-align: justify;
-    width: 80%;
-    margin: 0 2% 2% 10%;
-    list-style-type: disc;
-    line-height: 1.5rem;
+  text-align: start;
+  width: 80%;
+  margin: 0 2% 2% 10%;
+  list-style-type: disc;
+  line-height: 1.5rem;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.project-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: whitesmoke;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+#contact {
+  background-color: #595b5e;
+  width: 100%;
+  height: 550px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-header {
+  font-size: 2.5em;
+  font-family: "Noto Serif KR", serif;
+  color: whitesmoke;
+  margin: 2% 0 2% 0;
+}
+.name-email {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.input-container {
+  text-align: start;
+}
+.input-label {
+  font-size: 1.5em;
+  color: whitesmoke;
+  justify-content: start;
+  font-family: "Noto Serif KR", serif;
+}
+.contact-input {
+  background-color: #595b5e;
+  width: 95%;
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.2rem;
+  font-family: "Nanum Gothic", serif;
+  color: whitesmoke;
+  margin: 0 2% 5% 0;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.contact-msg {
+  background-color: #595b5e;
+  border: 2px solid whitesmoke;
+  resize: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: "Nanum Gothic", serif;
+  color: whitesmoke;
+}
+
+.contact-btn {
+  background-color: #595b5e;
+  color: whitesmoke;
+  width: 100px;
+  height: 50px;
+  font-family: "Nanum Gothic", serif;
+  font-size: 1.5rem;
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+  padding: 2%;
+  margin-top: 2%;
+}
+
+.social-links{
+    margin-top: 1%;
+}
+.credits {
+    font-size: 1.2rem;
+    color: whitesmoke;
+    margin-top: 1%
+}
+.credits a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.credits a:hover{
+    text-decoration: underline;
 }
