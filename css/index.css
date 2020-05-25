@@ -444,6 +444,10 @@ table {
 }
 
 @media (max-width: 1024px) {
+    #nav {
+        margin-top: 2%;
+    }
+
     .arrow {
         display: none;
     }
