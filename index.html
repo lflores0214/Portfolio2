@@ -8,11 +8,12 @@
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Nanum+Gothic&family=Noto+Serif+KR&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/486201176c.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
+    />
+    <link rel="icon" href="./images/LF-logo.png" />
     <title>Luis Flores' Portfolio</title>
+    <script src="./js/index.js"></script>
   </head>
   <body>
     <!-- NAV -->
@@ -38,6 +39,19 @@
       </div>
     </section>
     <!-- SKILLS -->
+    <a href="#nav">
+      <svg id="svg-arrow" class="arrow" viewBox="0 0 256 256">
+        <path
+        fill="none"
+        stroke="#6a6a6a"
+        stroke-width="5"
+        stroke-linejoin="round"
+        stroke-linecap="round"
+        id="arrow-path"
+        d="M16,184 128, 72 240,184"
+        />
+      </svg>
+    </a>
     <section id="skills">
       <div class="icon-container">
         <div class="icon">
@@ -219,42 +233,53 @@
             <label class="input-label" for="name">Name</label>
             <input type="text" name="name" id="name" class="contact-input" />
           </div>
-          <div class="input-container" >
+          <div class="input-container">
             <label class="input-label" for="email">Email</label>
             <input type="email" name="email" id="email" class="contact-input" />
           </div>
         </div>
         <div class="message">
-          <label class="input-label" for="message"> Message</label>
-          <textarea name="message" id="message" class="contact-msg" rows="5"></textarea>
+          <label class="input-label-msg" for="message"> Message</label>
+          <textarea
+            name="message"
+            id="message"
+            class="contact-msg"
+            rows="5"
+          ></textarea>
         </div>
         <div class="button">
-          <button aria-label="send" class="contact-btn">Send</button>
+          <button aria-label="send" class="contact-btn" type="submit">Send</button>
         </div>
       </form>
       <div class="social-links"></div>
       <div>
-        <a
-          href="https://www.linkedin.com/in/luis-flores0214/"
-          target="_blank"
-          ><img class="social" src="./SVGs/linkedin.svg" alt="LinkedIn icon"/></a
-        >
+        <a href="https://www.linkedin.com/in/luis-flores0214/" target="_blank"
+          ><img class="social" src="./SVGs/linkedin.svg" alt="LinkedIn icon"
+        /></a>
 
-        <a
-          href="https://github.com/lflores0214"
-          target="_blank"
-          ><img class="social" src="SVGs/github.svg" /></a
-        >
+        <a href="https://github.com/lflores0214" target="_blank"
+          ><img class="social" src="SVGs/github.svg"
+        /></a>
       </div>
-      <object data="nothing.pdf" type="application/pdf" width="100%" height="100%">
-        <p class="resume-link" >View my <a class="resume-link" target="_blank" href="Resume.pdf">resume</a></p>
+      <object
+        data="nothing.pdf"
+        type="application/pdf"
+        width="100%"
+        height="100%"
+      >
+        <p class="resume-link">
+          View my
+          <a class="resume-link" target="_blank" href="Resume.pdf">resume</a>
+        </p>
       </object>
       <div class="credits">
-        <p>Icons by <a href="https://icons8.com">icons8</a> & <a href="https://icons8.com" >flaticon</a></p> 
-        <br>
-        <p> © Copyright Luis Flores</p>
+        <p>
+          Icons by <a href="https://icons8.com">icons8</a> &
+          <a href="https://icons8.com">flaticon</a>
+        </p>
+        <br />
+        <p>© Copyright Luis Flores</p>
       </div>
-      
     </footer>
   </body>
 </html>
