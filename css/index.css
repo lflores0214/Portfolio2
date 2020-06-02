@@ -115,7 +115,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 }
 ol,
 ul {
@@ -137,7 +136,7 @@ table {
   border-spacing: 0;
 }
 * {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 #nav {
@@ -147,9 +146,7 @@ table {
   background-color: white;
   width: 100%;
   height: 5vh;
-  
 }
-
 
 #nav a {
   color: #595b5e;
@@ -219,9 +216,9 @@ table {
   transition: ease-in-out 0.2s;
 }
 .arrow:hover {
-    width: 55px;
-    height: auto;
-    transition: ease-in 0.2s;
+  width: 55px;
+  height: auto;
+  transition: ease-in 0.2s;
 }
 
 .icon-container {
@@ -327,9 +324,7 @@ table {
   font-family: "Nanum Gothic", sans-serif;
 }
 .project-link:hover {
-    text-decoration: underline;
-    
-
+  text-decoration: underline;
 }
 
 #contact {
@@ -410,10 +405,10 @@ table {
 }
 
 .contact-btn:hover {
-    cursor: pointer;
-    background-color: whitesmoke;
-    color: #595b5e;
-    border: 2px solid #595b5e;
+  cursor: pointer;
+  background-color: whitesmoke;
+  color: #595b5e;
+  border: 2px solid #595b5e;
 }
 
 .social-links {
@@ -444,37 +439,37 @@ table {
 }
 
 @media (max-width: 1024px) {
-    #nav {
-        margin-top: 2%;
-    }
+  #nav {
+    margin-top: 2%;
+  }
 
-    .arrow {
-        display: none;
-    }
+  .arrow {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
-    #nav {
-        margin: 8%;
-    }
-    .arrow {
-        display: none;
-    }
-    .icon-container{
-        max-width: 100%;
-        width:80%
-    }
-    #projects {
-        width: 100%;
-    }
-    .project {
-        width: 90%;
-        margin-left: 5%
-    }
-    .name-email {
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-      }
+  #nav {
+    margin: 8%;
+  }
+  .arrow {
+    display: none;
+  }
+  .icon-container {
+    max-width: 100%;
+    width: 80%;
+  }
+  #projects {
+    width: 100%;
+  }
+  .project {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .name-email {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 }
