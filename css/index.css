@@ -274,11 +274,15 @@ table {
   margin: 2% 0 2% 0;
   border-radius: 2%;
 }
+.project a {
+  text-decoration: none;
+}
 
 .project-title {
   color: whitesmoke;
   font-size: 1.8rem;
   text-decoration: underline;
+  text-decoration-color: whitesmoke;
   margin: 0 0 2% 5%;
 
   text-align: start;
@@ -393,6 +397,7 @@ table {
 
 .contact-btn {
   background-color: #595b5e;
+
   color: whitesmoke;
   width: 100px;
   height: 50px;
@@ -414,6 +419,9 @@ table {
 .social-links {
   margin-top: 1%;
 }
+.resume-container {
+  margin-top: 1%;
+}
 .resume-link {
   font-size: 1.2rem;
   color: whitesmoke;
@@ -426,16 +434,18 @@ table {
 .credits {
   font-size: 1.2rem;
   color: whitesmoke;
-  margin-top: 2%;
+  margin-top: 2%;  color: whitesmoke;
   margin-bottom: 2%;
 }
 .credits a {
   text-decoration: none;
   color: whitesmoke;
+
 }
 
 .credits a:hover {
   text-decoration: underline;
+  
 }
 
 @media (max-width: 1024px) {
